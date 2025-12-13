@@ -105,10 +105,7 @@ jobs:
           flags: frontend
           name: frontend-coverage
           token: ${{ secrets.CODECOV_TOKEN }}ion@v3
-        with:
-          files: ./frontend/coverage/coverage-final.json
-          flags: frontend
-          name: frontend-coverage
+        
 
   docker-build:
     name: Docker Build Test
