@@ -46,7 +46,7 @@ const initDB = async () => {
   }
 };
 
- initDB();
+initDB();
 
 // Routes
 app.get('/api/health', (req, res) => {
