@@ -6,6 +6,14 @@ on:
     types:
       - completed
     branches: [main]
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.gitignore'
+      - 'CICD.md'
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
